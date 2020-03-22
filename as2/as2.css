@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: khaki;
+    border: solid midnightblue 4px;
+    border-radius: 15px;
+    border-style: ridge;
+}
+
+.heading{
+    color: maroon;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px auto;
+    padding-bottom: 50px;
+}
+#d2 {
+    margin: 100px 32%;
+    display: block;
+}
+img {
+    height: 550px;
+    width: 550px;
+}
+table {
+    border: solid rgba(57, 17, 80, 0.74) 2px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+#t1 {
+    height: 100px;
+    width: 600px;
+}
+#t2 {
+    width: 900px;
+    height: 500px;
+    margin-top: 100px;
+}
+th,td {
+    border:steelblue solid 1px;
+    text-align: center;
+}
+th {
+    font-size: 25px;
+    color: maroon;
+}
+tr:hover {
+    background-color: slategray;
+}
+th:hover, td:hover{
+    background-color: green;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+#d4 {
+    margin: 100px 100px;
+}
+#d4 p{
+    text-align: justify;
+    margin-top: 20px;
+    font-family: cursive;
+}
+#d4 h3 {
+    font-size: 30px;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
