@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+    <h1 align="center">Registration Form</h1>
+    <style type="text/css">
+        form {
+            margin: 0% auto;
+            background-color: cadetblue;
+            border-color: rgb(0, 2, 26);
+            width: max-content;
+        }
+        body {
+            background-color: darkgray;
+        }
+        h1 {
+            color: darkred;
+            font-size: 50px;
+        }
+        fieldset {
+            padding: 0%;
+            border-color: rgb(0, 2, 26);
+            color: rgb(0, 2, 26);
+            width: 500px;
+        }
+
+        input, textarea {
+            border: 2px solid rgb(0, 2, 26);
+            width: 275px;
+            height: 25px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        table {
+            border-spacing: 20px;
+            font-family: cursive;
+            border-radius: 20px;
+        }
+
+        td, legend {
+            color: rgb(0, 2, 26);
+            font-family: sans-serif;
+            width: max-content;
+            font-family: inherit;
+        }
+        legend{
+            font-family: cursive;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            background-color: whitesmoke;
+            border: 2px solid rgb(0, 2, 26);
+            color: rgb(0, 2, 26);
+            font-size: 18px;
+            font-family: inherit;
+        }
+        #resetBtn {
+            width: 100px;
+            height: 50px;
+            background-color: whitesmoke;
+            border: 2px solid rgb(0, 2, 26);
+            color: rgb(0, 2, 26);
+            font-size: 18px;
+            font-family: inherit;
+        }
+    </style>
+    <script src="as4.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Register Here</legend>
+            <legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Enter Name : </td>
+                            <td><input id="name" type="textfield" name="name" placeholder="Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Email-ID : </td>
+                            <td><input type="email" id="email" name="email" placeholder="xyz@example.com"
+                                    onblur="emailval();" required></td>
+                        </tr>
+                        <tr>
+                            <td>URL: </td>
+                            <td><input type="url" id="url" name="url" placeholder="url" required></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Address : </td>
+                            <td><textarea id="address" name="address" placeholder="Address" rows="5" cols="50"
+                                    required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Enter your Contact No. : </td>
+                            <td><input type="tel" id="telephone" name="telephone" name="telephone" required></td>
+                        </tr>
+                        <tr>
+                            <td><button onsubmit="submitval();">Submit</button></td>
+                            <td><input type="reset" value="Reset" id="resetBtn"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </legend>
+        </fieldset>
+</body>
+
+</html>
