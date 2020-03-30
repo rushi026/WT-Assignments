@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Social Media Registration Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="as5.css">
+	<script src="as5.js"></script>
+</head>
+
+<body>
+	<fieldset>
+		<legend>Sign Up</legend>
+		<h1>Create your Account</h1>
+		<div id="layout">
+			<form action="validation.php" method="post">
+
+				<table>
+					<tr>
+						<td class="lable">
+							<label for="name">Name</label>
+						</td>
+						<td class="input">
+							<input type="" name="name" placeholder="name" autocomplete="off"
+							pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$" required>
+						</td>
+					</tr>
+					<tr>
+						<td class="lable">
+							<label for="email">Email</label>
+						</td>
+						<td class="input">
+							<input type="" name="email" placeholder="email" autocomplete="off"
+							pattern="[0-9a-z._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+						</td>
+					</tr>
+					<tr>
+						<td class="lable">
+							<label for="telephone">Mobile No.</label>
+						</td>
+						<td class="input">
+							<input type="tel" name="telephone" placeholder="telephone" pattern="[789][0-9]{9}"
+							autocomplete="off" required>
+						</td>
+					</tr>
+					<tr>
+						<td class="lable">
+							<label for="gender">I'm a </label>
+						</td>
+						<td class="input">
+							<select id="select" name="profession" onblur="change_work_name()" required>
+								<option hidden=""></option>
+								<option>Student</option>
+								<option>Faculty Member</option>
+								<option>Professional</option>
+								<option>Company Representative</option>
+								<option>Firm Representative</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="lable">
+							<label for="workname" id="workname">Company/Firm Name</label>
+						</td>
+						<td class="input">
+							<input type="" name="workname" placeholder="workname" autocomplete="off" required>
+						</td>
+					</tr>
+				</table>
+
+				<button>Submit</button>
+
+				
+				<!-- <div class="field">
+					<div class="input">
+						
+						
+					</div>
+				</div>
+				<div class="field">
+					<div class="input">
+						
+						
+					</div>
+				</div>
+				<div class="field">
+					<div class="input">
+						
+						
+					</div>
+				</div>
+				<div class="field">
+					<div class="input">
+						
+						
+					</div>
+				</div>
+				<div class="field">
+					<div class="input">
+						
+						
+					</div>
+				</div>
+				<div class="field">
+					<div class="input">
+						
+					</div>
+				</div> -->
+			</form>
+		</div>
+	</fieldset>
+</body>
+
+</html>
